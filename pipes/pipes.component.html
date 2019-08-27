@@ -1,0 +1,78 @@
+<strong>Date pipes</strong>
+<p> Unformatted date : {{toDate }} </p>
+
+<p>medium : {{toDate | date:'medium'}} </p>
+
+<p>short : {{toDate | date:'short'}} </p>
+
+<p>fullDate : {{toDate | date:'fullDate'}} </p>
+
+<p>longDate : {{toDate | date:'longDate'}} </p>
+
+<p>mediumDate : {{toDate | date:'mediumDate'}} </p>
+
+<p>shortDate : {{toDate | date:'shortDate'}} </p>
+
+<p>mediumTime : {{toDate | date:'mediumTime'}} </p>
+
+<p>dd-MM-y : {{toDate | date:'dd-MM-y'}} </p>
+
+<p>dd-MM-yy HH:mm : {{toDate | date:'dd-MM-yy HH:mm'}} </p>
+
+<strong>casing pipes</strong>
+<p>Unformatted :{{msg}} </p>
+
+<p>Uppercase :{{msg | uppercase}} </p>
+
+<p>Lowercase :{{msg | lowercase}} </p>
+
+<strong>slicing array pipes</strong>
+<p>Complete String :{{msg}} </p>
+
+<p>Example 1 :{{msg | slice:8:12}} </p>
+
+<p>Example 2 :{{msg | slice:-9}} </p>
+
+<strong>number pipes</strong>
+<p> Unformatted :{{num}}</p>
+
+<p> Formatted :{{num | number}}</p>
+
+<p> Formatted :{{num | number:'3.1-2'}}</p>
+
+<p> Formatted :{{num | number:'7.1-5'}} </p>
+
+<strong>percentage pipes</strong>
+<p>Unformatted :{{per}} </p>
+
+<p>Example 1 :{{per | percent }} </p>
+
+<p>Example 2 :{{per | percent:'1.2-2'}} </p>
+
+<strong>currency pipes</strong>
+<p>Unformatted :{{cur}} </p>
+
+<p>Example 1 :{{cur | currency }} </p>
+
+<p>Example 2 :{{cur | currency:'INR':true:'4.2-2'}} </p>
+
+<div class='panel panel-primary'>
+  <div class='panel-heading'>
+      <strong>{{title}} </strong>
+  </div>
+  <div class="panel-body">
+
+    <div>
+        <h3>Fahrenheit to Celsius </h3>
+        <p> Fahrenheit : <input type="text" [(ngModel)]="Fahrenheit"/> 
+                Celsius : {{Fahrenheit | customPipe:'C'}} </p>
+    </div>
+
+    <div>
+        <h3>Celsius to Fahrenheit </h3>
+        <p> celsius : <input type="text" [(ngModel)]="celcius"/> 
+                Fahrenheit : {{celcius | customPipe:'F'}} </p>
+    </div>
+
+  </div>
+</div>
