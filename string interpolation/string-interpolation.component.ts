@@ -11,5 +11,7 @@ export class StringInterpolationComponent implements OnInit {
 
   ngOnInit() {
   }
-  title = 'Data binding example using String Interpolation';    
+  title = 'Data binding example using String Interpolation';
+  numberA: number = 10;    
+  numberB: number = 20;  
 }
