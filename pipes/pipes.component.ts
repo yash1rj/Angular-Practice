@@ -11,7 +11,7 @@ export class PipesComponent implements OnInit {
 
   ngOnInit() {
   }
-  title: string = 'pipe Example' ; 
+  title: string = 'Custom pipe' ; 
   toDate: Date = new Date();
   msg: string = "Hello World";
   num: number = 9542.14554;
