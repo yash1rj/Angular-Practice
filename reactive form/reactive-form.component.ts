@@ -14,6 +14,6 @@ export class ReactiveFormComponent implements OnInit {
   }
   email = new FormControl('');  
   updateEmail() {  
-    this.email.setValue('sonoojaiswal@javatpoint.com');  
+    this.email.setValue('a@b.com');  
   } 
 }
