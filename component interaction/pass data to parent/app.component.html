@@ -1,0 +1,9 @@
+<h1>Welcome to {{title}}!</h1>
+<p> current count is {{ClickCounter}} </p>
+
+<!-- 
+  The “countChanged” event is enclosed in Parentheses. It is then assigned to the method “countChangedHandler” in the component class. The syntax is similar to Event Binding.
+
+  The countChangedHandler($event) method accepts the $event argument. The data associated with event is now available to in the $event property 
+-->
+<child-component [count]=ClickCounter (countChanged)="countChangedHandler($event)"></child-component>
