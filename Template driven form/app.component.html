@@ -1,0 +1,25 @@
+<div class="container">
+
+    <h1 class="heading"><strong>Contact </strong> Form</h1>
+
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" >
+        <!-- ngModel will use the name attribute to create the FormControl instance for each of the Form Field it is attached. -->
+        <div class="form-group">
+            <label for="firstname">First Name</label> 
+            <input type="text"  class="form-control"  name="firstname" ngModel>
+        </div>
+
+        <div class="form-group">
+            <label for="lastname">Last Name</label> 
+            <input type="text" class="form-control"  name="lastname" ngModel>
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+
+    </form>
+
+    <pre>{{contactForm.value | json }} </pre>
+
+</div>
