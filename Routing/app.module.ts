@@ -15,10 +15,13 @@ import { appRoutes } from './app.routes';
 import { ProductService } from './product.service';
 import { ProductDetailsComponent } from './product/product-details/product-details.component';
 
+import { ProductOverviewComponent} from './product/product-details/product-overview.component'
+import { ProductSpecComponent} from './product/product-details/product-spec.component'
+
 @NgModule({
   imports:      [ BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(appRoutes)  /*path location strategy */
     /*RouterModule.forRoot(appRoutes, { useHash: true }) */   /*Hashlocationstrategy */ ],
-  declarations: [ AppComponent, HomeComponent, ContactComponent, ProductComponent, ErrorComponent, ProductDetailsComponent ],
+  declarations: [ AppComponent, HomeComponent, ContactComponent, ProductComponent, ErrorComponent, ProductDetailsComponent, ProductOverviewComponent, ProductSpecComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
