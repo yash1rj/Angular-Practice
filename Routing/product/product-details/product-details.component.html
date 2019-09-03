@@ -3,4 +3,10 @@
 <p>product : {{product.name}}</p>
 <p>price : {{ product.price}}</p>
 <br>
+<ul class="nav navbar-nav">
+    <li><a [routerLink]="['overview']">OverView </a></li>
+    <li><a [routerLink]="['spec']">Specification </a></li>
+</ul>
+
+<router-outlet></router-outlet>
 <a class='btn btn-secondary btn-sm' (click)="onBack()">Back </a>
