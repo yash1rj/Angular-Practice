@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>RSVP</h1>
+    <div class="row">
+        <div class="col-lg-6">
+            <app-events (eventClicked)="childEventClicked($event)"></app-events>
+        </div>
+        <div class="col-lg-6">
+            <app-event-details [event]="clickedEvent"></app-event-details>
+        </div>
+    </div>
+</div>
